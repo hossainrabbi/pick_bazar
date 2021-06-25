@@ -5,7 +5,7 @@ import Logo from '../../images/logo.png';
 
 const Navbar = () => {
     return (
-        <nav className="fixed top-0 w-full bg-white">
+        <nav className="fixed top-0 w-full bg-white z-10">
             <Container>
                 <div className="flex justify-between items-center h-16">
                     <img className="h-6" src={Logo} alt="Pick Bazar" />

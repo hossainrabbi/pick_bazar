@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+button.InfiniteCarouselArrow {
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00000070;
+    position: absolute;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+button.InfiniteCarouselArrow.InfiniteCarouselArrowPrev {
+    left: -9px;
+}
+
+button.InfiniteCarouselArrow.InfiniteCarouselArrowNext {
+    right: -9px;
+}
+button.InfiniteCarouselArrow .InfiniteCarouselArrowIcon {
+    display: inline-block;
+    padding: 3px;
+    border: solid #1f2937;
+    border-width: 0 3px 3px 0;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+button.InfiniteCarouselArrow:hover {
+    background-color: #059669;
+}
+button.InfiniteCarouselArrow:hover .InfiniteCarouselArrowIcon {
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+}

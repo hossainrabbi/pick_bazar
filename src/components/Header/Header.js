@@ -7,10 +7,10 @@ const Header = () => {
     return (
         <header
             style={{ backgroundImage: `url(${Hero})` }}
-            className="bg-center bg-no-repeat bg-cover h-screen w-screen"
+            className="bg-center bg-no-repeat bg-cover h-screen w-screen relative"
         >
             <Container>
-                <div className="fixed top-2/4 left-2/4 transform -translate-x-2/4 -translate-y-2/4 text-center w-full">
+                <div className="absolute top-2/4 left-2/4 transform -translate-x-2/4 -translate-y-2/4 text-center w-full">
                     <h2 className="text-4xl font-bold">
                         Groceries Delivered in 90 Minute
                     </h2>
@@ -20,10 +20,11 @@ const Header = () => {
                     </p>
                     <div className="flex justify-center items-center mx-auto rounded-md overflow-hidden w-3/5">
                         <input
-                            className="w-full h-full rounded-r-none py-4 px-5 ml-1 rounded-l-md shadow-2xl focus:outline-none ring-2 ring-white focus:ring-green-600"
+                            className="w-full h-full rounded-r-none py-4 px-5 ml-1 rounded-l-md shadow-2xl focus:outline-none ring-1 ring-white focus:ring-green-600"
                             type="text"
+                            placeholder="Search your products from here"
                         />
-                        <Button className="flex justify-center items-center rounded-l-none h-full py-4 px-7">
+                        <Button className="flex justify-center items-center rounded-l-none leading-none h-full py-4 px-7">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="w-5 mr-2"
