@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from '../Navbar/Navbar';
 import Container from '../common/Container';
 import Button from '../common/Button';
 import Hero from '../../images/grocery.png';
@@ -7,8 +8,9 @@ const Header = () => {
     return (
         <header
             style={{ backgroundImage: `url(${Hero})` }}
-            className="bg-center bg-no-repeat bg-cover h-screen w-screen relative"
+            className="bg-center bg-no-repeat bg-cover h-screen w-screen relative min-h-screen"
         >
+            <Navbar />
             <Container>
                 <div className="absolute top-2/4 left-2/4 transform -translate-x-2/4 -translate-y-2/4 text-center w-full">
                     <h2 className="text-4xl font-bold">
@@ -24,7 +26,7 @@ const Header = () => {
                             type="text"
                             placeholder="Search your products from here"
                         />
-                        <Button className="flex justify-center items-center rounded-l-none leading-none h-full py-4 px-7">
+                        <Button className="flex justify-center items-center rounded-l-none bg-green-600 leading-none h-full py-4 px-7">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="w-5 mr-2"
