@@ -22,7 +22,7 @@ const Header = () => {
                     </p>
                     <div className="flex justify-center items-center mx-auto rounded-md overflow-hidden w-3/5">
                         <input
-                            className="w-full h-full rounded-r-none py-4 px-5 ml-1 rounded-l-md shadow-2xl focus:outline-none ring-1 ring-white focus:ring-green-600"
+                            className="w-full h-full rounded-r-none py-3 px-5 ml-1 rounded-l-md shadow-2xl focus:outline-none ring-1 ring-white focus:ring-green-600"
                             type="text"
                             placeholder="Search your products from here"
                         />

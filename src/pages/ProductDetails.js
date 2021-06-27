@@ -1,15 +1,16 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
 import Container from '../components/common/Container';
 import ProductBtn from '../components/common/ProductBtn';
 import ProductCarousel from '../components/Products/ProductCarousel';
-import { productsData } from '../data/productsData';
 
 const ProductDetails = () => {
     const { id } = useParams();
+    const { products } = useSelector((state) => state);
 
     const { name, title, price, available, categories, description, images } =
-        productsData.find((item) => item.id === Number(id));
+        products.find((item) => item.id === Number(id));
 
     return (
         <article className="mt-12">

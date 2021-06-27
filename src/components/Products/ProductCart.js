@@ -21,7 +21,7 @@ const ProductCart = ({ id, name, price, images }) => {
                     <strong>${price}</strong>
                     <span className="block text-sm text-gray-500">{name}</span>
                 </div>
-                <ProductBtn className="mt-4" />
+                <ProductBtn className="mt-4" id={id} />
             </div>
         </div>
     );

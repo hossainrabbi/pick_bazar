@@ -1,4 +1,4 @@
-export const productsData = [
+const productsData = [
     {
         id: 1,
         name: 'Baby Spinach',
@@ -91,3 +91,5 @@ export const productsData = [
         images: ['/images/pepper.jpg'],
     },
 ];
+
+export default productsData;

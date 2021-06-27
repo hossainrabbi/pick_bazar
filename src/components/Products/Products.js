@@ -1,14 +1,16 @@
 import React from 'react';
-import { productsData } from '../../data/productsData';
+import { useSelector } from 'react-redux';
 import Container from '../common/Container';
 import ProductCart from './ProductCart';
 
 const Products = () => {
+    const { products } = useSelector((state) => state);
+
     return (
         <section className="bg-gray-100 py-10">
             <Container>
                 <div className="grid grid-cols-4 gap-4">
-                    {productsData.map((item) => (
+                    {products.map((item) => (
                         <div key={item.id}>
                             <ProductCart {...item} />
                         </div>
