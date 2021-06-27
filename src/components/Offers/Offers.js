@@ -6,7 +6,7 @@ import Container from '../common/Container';
 const Offers = () => {
     return (
         <div>
-            {/* <Container>
+            <Container>
                 <InfiniteCarousel
                     breakpoints={[
                         {
@@ -35,7 +35,7 @@ const Offers = () => {
                         </div>
                     ))}
                 </InfiniteCarousel>
-            </Container> */}
+            </Container>
         </div>
     );
 };

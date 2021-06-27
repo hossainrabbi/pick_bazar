@@ -28,6 +28,11 @@ const useCart = () => {
         }
     };
 
+    const handleRemoveCart = (id) => {
+        const removeItem = cartItems.filter((item) => item.id !== id);
+        setCartItems(removeItem);
+    };
+
     const total = cartItems.reduce(
         (acc, sum) => acc + sum.quantity * sum.price,
         0
@@ -35,6 +40,7 @@ const useCart = () => {
 
     return {
         handleCartAdd,
+        handleRemoveCart,
         total,
     };
 };
