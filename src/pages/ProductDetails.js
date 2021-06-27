@@ -6,11 +6,19 @@ import ProductBtn from '../components/common/ProductBtn';
 import ProductCarousel from '../components/Products/ProductCarousel';
 
 const ProductDetails = () => {
-    const { id } = useParams();
+    const { productId } = useParams();
     const { products } = useSelector((state) => state);
 
-    const { name, title, price, available, categories, description, images } =
-        products.find((item) => item.id === Number(id));
+    const {
+        id,
+        name,
+        title,
+        price,
+        available,
+        categories,
+        description,
+        images,
+    } = products.find((item) => item.id === Number(productId));
 
     return (
         <article className="mt-12">
@@ -41,7 +49,7 @@ const ProductDetails = () => {
                             ${price}
                         </h3>
                         <div className="flex justify-start items-center mb-5">
-                            <ProductBtn className="w-2/4" />
+                            <ProductBtn className="w-2/4" id={id} />
                             <span className="text-gray-500 ml-9">
                                 {available} pieces available
                             </span>

@@ -4,6 +4,11 @@ import { useSelector } from 'react-redux';
 const CartBtn = () => {
     const { cartItems } = useSelector((state) => state);
 
+    const total = cartItems.reduce(
+        (acc, sum) => acc + sum.quantity * sum.price,
+        0
+    );
+
     return (
         <button className="bg-green-600 fixed top-2/4 transform -translate-y-2/4 rounded-l-md right-0 p-4">
             <span className="text-white flex justify-between items-center">
@@ -22,7 +27,7 @@ const CartBtn = () => {
                 <span className="mt-1">{cartItems.length} items</span>
             </span>
             <span className="bg-white px-3 py-1 mt-2 rounded inline-block">
-                $333.70
+                ${total}
             </span>
         </button>
     );
