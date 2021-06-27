@@ -2,12 +2,15 @@ import React from 'react';
 import useCart from '../customHooks/useCart';
 
 const CartItem = ({ id, name, price, quantity, images }) => {
-    const { handleRemoveCart } = useCart();
+    const { handleRemoveCart, addToIncrement, addToDecrement } = useCart();
 
     return (
         <div className="flex justify-between items-center py-3 px-6 border border-gray-200">
             <div className="bg-gray-200 flex-wrap text-center rounded-full p-2">
-                <button className="block text-lg">
+                <button
+                    onClick={() => addToIncrement(id)}
+                    className="block text-lg"
+                >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-5 w-5"
@@ -22,7 +25,12 @@ const CartItem = ({ id, name, price, quantity, images }) => {
                     </svg>
                 </button>
                 <span className="block text-lg mt-2">{quantity}</span>
-                <button className="block text-lg">
+                <button
+                    onClick={() =>
+                        quantity > 1 ? addToDecrement(id) : handleRemoveCart(id)
+                    }
+                    className="block text-lg"
+                >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-5 w-5"
@@ -45,7 +53,9 @@ const CartItem = ({ id, name, price, quantity, images }) => {
                 <p className="text-green-600">${price}</p>
                 <p className="text-gray-300">{quantity} X 2lb</p>
             </div>
-            <div className="font-semibold">${price * quantity}</div>
+            <div className="font-semibold">
+                ${(price * quantity).toFixed(2)}
+            </div>
             <div>
                 <button
                     onClick={() => handleRemoveCart(id)}
