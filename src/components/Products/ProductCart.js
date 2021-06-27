@@ -2,7 +2,9 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import ProductBtn from '../common/ProductBtn';
 
-const ProductCart = ({ id, name, price, images }) => {
+const ProductCart = (props) => {
+    const { id, name, price, images } = props;
+
     const history = useHistory();
     const handleImageClick = (id) => {
         history.push(`/products/${id}`);

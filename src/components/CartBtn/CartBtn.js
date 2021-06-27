@@ -1,13 +1,10 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import useCart from '../customHooks/useCart';
 
 const CartBtn = () => {
     const { cartItems } = useSelector((state) => state);
-
-    const total = cartItems.reduce(
-        (acc, sum) => acc + sum.quantity * sum.price,
-        0
-    );
+    const { total } = useCart();
 
     return (
         <button className="bg-green-600 fixed top-2/4 transform -translate-y-2/4 rounded-l-md right-0 p-4">
