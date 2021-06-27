@@ -45,3 +45,23 @@ button.InfiniteCarouselArrow:hover .InfiniteCarouselArrowIcon {
     border: solid #ffffff;
     border-width: 0 3px 3px 0;
 }
+
+/* Products Carousel */
+.product-carousel .thumbs-wrapper.axis-vertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel .thumb.selected,
+.carousel .thumb {
+    border: 1px solid #e5e7eb !important;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.carousel .thumb.selected,
+.carousel .thumb:hover {
+    border: 1px solid #059669 !important;
+}

@@ -13,7 +13,7 @@ const Navbar = () => {
                     <ul className="flex items-center">
                         <li className="mx-3 p-2">
                             <Link
-                                href="/"
+                                to="/"
                                 className="font-semibold hover:text-green-700 transition duration-300 ease-in-out"
                             >
                                 Offer
@@ -21,7 +21,7 @@ const Navbar = () => {
                         </li>
                         <li className="mx-3 p-2">
                             <Link
-                                href="/"
+                                to="/"
                                 className="font-semibold hover:text-green-700 transition duration-300 ease-in-out"
                             >
                                 FAQ
@@ -29,7 +29,7 @@ const Navbar = () => {
                         </li>
                         <li className="mx-3 p-2">
                             <Link
-                                href="/"
+                                to="/"
                                 className="font-semibold hover:text-green-700 transition duration-300 ease-in-out"
                             >
                                 Contact

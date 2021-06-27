@@ -10,9 +10,9 @@ export const productsData = [
             'Spinach (Spinacia oleracea) is a leafy green flowering plant native to central and western Asia. It is of the order Caryophyllales, family Amaranthaceae, subfamily Chenopodioideae. Its leaves are a common edible vegetable consumed either fresh.',
         images: [
             '/images/babySpinach-1.jpg',
-            '/images/babySpinach-2.jpg',
-            '/images/babySpinach-3.jpg',
-            '/images/babySpinach-4.jpg',
+            '/images/babySpinach-2.png',
+            '/images/babySpinach-3.png',
+            '/images/babySpinach-4.png',
         ],
     },
     {
@@ -26,9 +26,9 @@ export const productsData = [
             'The Brussels sprout is a member of the Gemmifera Group of cabbages, grown for its edible buds. The leaf vegetables are typically 1.5–4.0 cm in diameter and look like miniature cabbages. The Brussels sprout has long been popular in Brussels, Belgium, and may have gained its name there.',
         images: [
             '/images/brusselsSprout-1.jpg',
-            '/images/brusselsSprout-2.jpg',
-            '/images/brusselsSprout-3.jpg',
-            '/images/brusselsSprout-4.jpg',
+            '/images/brusselsSprout-2.png',
+            '/images/brusselsSprout-3.png',
+            '/images/brusselsSprout-4.png',
         ],
     },
     {
@@ -42,9 +42,9 @@ export const productsData = [
             'celery stick - celery stalks cut into small sticks. crudites - raw vegetables cut into bite-sized strips and served with a dip. celery - stalks eaten raw or cooked or used as seasoning.',
         images: [
             '/images/celeryStick-1.jpg',
-            '/images/celeryStick-2.jpg',
-            '/images/celeryStick-3.jpg',
-            '/images/celeryStick-4.jpg',
+            '/images/celeryStick-2.png',
+            '/images/celeryStick-3.png',
+            '/images/celeryStick-4.png',
         ],
     },
     {
@@ -58,9 +58,9 @@ export const productsData = [
             'Maize, also known as corn, is a cereal grain first domesticated by indigenous peoples in southern Mexico about 10,000 years ago. The leafy stalk of the plant produces pollen inflorescences and separate ovuliferous inflorescences called ears that yield kernels or seeds, which are fruits.',
         images: [
             '/images/sweetCorn-1.jpg',
-            '/images/sweetCorn-2.jpg',
-            '/images/sweetCorn-3.jpg',
-            '/images/sweetCorn-4.jpg',
+            '/images/sweetCorn-2.png',
+            '/images/sweetCorn-3.png',
+            '/images/sweetCorn-4.png',
         ],
     },
     {
@@ -74,9 +74,9 @@ export const productsData = [
             'Cucumber is a widely cultivated plant in the gourd family, Cucurbitaceae. It is a creeping vine that bears cucumiform fruits that are used as vegetables. There are three main varieties of cucumber: slicing, pickling, and seedless. Within these varieties, several cultivars have been created.',
         images: [
             '/images/cucumber-1.jpg',
-            '/images/cucumber-2.jpg',
-            '/images/cucumber-3.jpg',
-            '/images/cucumber-4.jpg',
+            '/images/cucumber-2.png',
+            '/images/cucumber-3.png',
+            '/images/cucumber-4.png',
         ],
     },
     {

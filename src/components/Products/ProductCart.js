@@ -1,6 +1,5 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import Button from '../common/Button';
 import ProductBtn from '../common/ProductBtn';
 
 const ProductCart = ({ id, name, price, images }) => {

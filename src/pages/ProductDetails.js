@@ -1,8 +1,8 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import Button from '../components/common/Button';
+import { Link, useParams } from 'react-router-dom';
 import Container from '../components/common/Container';
 import ProductBtn from '../components/common/ProductBtn';
+import ProductCarousel from '../components/Products/ProductCarousel';
 import { productsData } from '../data/productsData';
 
 const ProductDetails = () => {
@@ -15,12 +15,22 @@ const ProductDetails = () => {
         <article className="mt-12">
             <Container>
                 <div className="grid grid-cols-2 gap-4">
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Tempora, aperiam et atque dicta pariatur recusandae vero
-                        consequuntur aliquam? Error necessitatibus omnis saepe
-                        eum harum quod explicabo commodi voluptatem corrupti
-                        tempora?
+                    <div className="relative">
+                        <ProductCarousel name={name} images={images} />
+                        <Link
+                            className="absolute left-10 top-0 text-green-600 flex justify-start items-center"
+                            to="/"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="h-5 w-5 mr-3"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                            >
+                                <path d="M8.445 14.832A1 1 0 0010 14v-2.798l5.445 3.63A1 1 0 0017 14V6a1 1 0 00-1.555-.832L10 8.798V6a1 1 0 00-1.555-.832l-6 4a1 1 0 000 1.664l6 4z" />
+                            </svg>
+                            <span className="inline-block mt-px">Back</span>
+                        </Link>
                     </div>
                     <div>
                         <h3 className="text-xl font-semibold">{name}</h3>
