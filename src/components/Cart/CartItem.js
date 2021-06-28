@@ -5,7 +5,7 @@ const CartItem = ({ id, name, price, quantity, images }) => {
     const { handleRemoveCart, addToIncrement, addToDecrement } = useCart();
 
     return (
-        <div className="flex justify-between items-center py-3 px-6 border border-gray-200">
+        <div className="flex justify-between items-center py-3  px-4 border border-gray-200">
             <div className="bg-gray-200 flex-wrap text-center rounded-full p-2">
                 <button
                     onClick={() => addToIncrement(id)}

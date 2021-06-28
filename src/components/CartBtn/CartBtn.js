@@ -2,12 +2,15 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import useCart from '../customHooks/useCart';
 
-const CartBtn = () => {
+const CartBtn = ({ setShow }) => {
     const { cartItems } = useSelector((state) => state);
     const { total } = useCart();
 
     return (
-        <button className="bg-green-600 fixed top-2/4 transform -translate-y-2/4 rounded-l-md right-0 p-4">
+        <button
+            onClick={() => setShow(true)}
+            className="bg-green-600 fixed top-2/4 transform -translate-y-2/4 rounded-l-md right-0 p-4"
+        >
             <span className="text-white flex justify-between items-center">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
