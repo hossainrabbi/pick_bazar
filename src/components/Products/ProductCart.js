@@ -1,9 +1,13 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import ProductBtn from '../common/ProductBtn';
 
 const ProductCart = (props) => {
     const { id, name, price, images } = props;
+    const cartItems = useSelector((state) => state.cartItems);
+
+    const cartItem = cartItems.find((item) => item.id === id);
 
     const history = useHistory();
     const handleImageClick = (id) => {
@@ -23,7 +27,7 @@ const ProductCart = (props) => {
                     <strong>${price}</strong>
                     <span className="block text-sm text-gray-500">{name}</span>
                 </div>
-                <ProductBtn className="mt-4" id={id} />
+                <ProductBtn cartItem={cartItem} className="mt-4" id={id} />
             </div>
         </div>
     );
